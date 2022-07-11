@@ -1,17 +1,23 @@
 :root {
-	--dark: #374151;
-	--darker: #1F2937;
+	--dark: #191E51;
+	--darker: #464D82;
 	--darkest: #111827;
 	--grey: #6B7280;
 	--pink: #EC4899;
-	--purple: #8B5CF6;
-	--light: #EEE;
+	--purple: #29335F;
+	--light: #ffffff;
 }
 
 * {
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Fira sans", sans-serif;
+}
+
+.container{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
 }
 
 body {
@@ -153,4 +159,34 @@ main {
 
 .task .actions .delete {
 	color: crimson;
+}
+
+  
+#task-title{
+	color: var(--pink);
+	font-size: 1.25rem;
+	font-weight: 700;
+	background-image: linear-gradient(to right, var(--pink), var(--purple));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.filter {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+}
+
+@media screen and (max-width:425px){
+	.container{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 5px;
+	}
 }
